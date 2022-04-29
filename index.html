@@ -139,12 +139,22 @@
           </div>
         </div>
         <div class="card">
-          <img
-            src="build/img/Servicios/professors.jpg"
-            loading="lazy"
-            class="card-img-top"
-            alt="..."
-          />
+          <picture>
+            <source
+              srcset="build/img/Servicios/business.webp"
+              type="image/webp"
+            />
+            <source
+              srcset="build/img/Servicios/business.jpg"
+              type="image/jpeg"
+            />
+            <img
+              class="card-img-top"
+              loading="lazy"
+              src="build/img/Servicios/business.jpg"
+              alt="Logo"
+            />
+          </picture>
           <div class="card-body">
             <h3>Formación de profesores de inglés</h3>
             <p class="card-text">
