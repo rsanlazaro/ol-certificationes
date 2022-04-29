@@ -42,7 +42,7 @@ function javascript() {
 
 function imagenes() {
     return src(paths.imagenes)
-        .pipe(cache(imagemin({ optimizationLevel: 95})))
+        .pipe(cache(imagemin({ optimizationLevel: 7})))
         .pipe(dest('build/img'))
         // .pipe(notify({ message: 'Imagen Completada'}));
 }
