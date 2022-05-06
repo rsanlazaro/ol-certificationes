@@ -41,7 +41,7 @@ function javascript() {
 }
 
 function javascript2() {
-    return src('./node_modules/jquery/dist/jquery.min.js')
+    return src('./node_modules/jquery/dist/jquery.slim.min.js')
       .pipe(sourcemaps.init())
       .pipe(concat('bundle2.js')) // final output file name
       .pipe(terser())
