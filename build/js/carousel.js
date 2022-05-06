@@ -5,6 +5,7 @@ $(function () {
     slidesToShow: 5,
     autoplay: true,
     autoplaySpeed: 1500,
+    accessibility: false,
     responsive: [
       {
         breakpoint: 1300,
