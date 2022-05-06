@@ -61,7 +61,7 @@ function imagenes() {
 
 function versionWebp() {
     return src(paths.imagenes)
-        .pipe(webp({method: 6, quality: 70}) )
+        .pipe(webp({method: 6}) )
         .pipe(dest('build/img'))
         // .pipe(notify({ message: 'Imagen Completada'}));
 }
