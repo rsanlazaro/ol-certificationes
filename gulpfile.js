@@ -52,7 +52,7 @@ function javascript2() {
 
 function imagenes() {
     return src(paths.imagenes)
-        .pipe(imagemin({quality: 50}))
+        .pipe(imagemin({quality: 80}))
         .pipe(dest('./build/img'))
         // .pipe(cache(imagemin({ optimizationLevel: 7})))
         // .pipe(dest('./build/img'))
