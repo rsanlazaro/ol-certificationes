@@ -15,7 +15,7 @@ const webp = require('gulp-webp');
 const paths = {
     scss: 'src/scss/**/*.scss',
     js: 'src/js/**/*.js',
-    imagenes: 'src/img/**/*'
+    imagenes: './src/img/**/*'
 }
 
 // css es una función que se puede llamar automaticamente
@@ -42,14 +42,16 @@ function javascript() {
 
 function imagenes() {
     return src(paths.imagenes)
-        .pipe(cache(imagemin({ optimizationLevel: 7})))
-        .pipe(dest('build/img'))
+        .pipe(imagemin({quality: 50}))
+        .pipe(dest('./build/img'))
+        // .pipe(cache(imagemin({ optimizationLevel: 7})))
+        // .pipe(dest('./build/img'))
         // .pipe(notify({ message: 'Imagen Completada'}));
 }
 
 function versionWebp() {
     return src(paths.imagenes)
-        .pipe( webp() )
+        .pipe(webp({method: 6, quality: 5}) )
         .pipe(dest('build/img'))
         // .pipe(notify({ message: 'Imagen Completada'}));
 }
