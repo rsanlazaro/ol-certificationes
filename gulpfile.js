@@ -40,6 +40,16 @@ function javascript() {
       .pipe(dest('./build/js'))
 }
 
+function javascript2() {
+    return src('./node_modules/jquery/dist/jquery.min.js')
+      .pipe(sourcemaps.init())
+      .pipe(concat('bundle2.js')) // final output file name
+      .pipe(terser())
+      .pipe(sourcemaps.write('.'))
+      .pipe(rename({ suffix: '.min' }))
+      .pipe(dest('./build/js'))
+}
+
 function imagenes() {
     return src(paths.imagenes)
         .pipe(imagemin({quality: 50}))
@@ -60,8 +70,9 @@ function versionWebp() {
 function watchArchivos() {
     watch( paths.scss, css );
     watch( paths.js, javascript );
+    watch( paths.js, javascript2 );
     watch( paths.imagenes, imagenes );
     watch( paths.imagenes, versionWebp );
 }
   
-exports.default = parallel(css, javascript, versionWebp, imagenes, watchArchivos); 
+exports.default = parallel(css, javascript, javascript2, versionWebp, imagenes, watchArchivos); 
