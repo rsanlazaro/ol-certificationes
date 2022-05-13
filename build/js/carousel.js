@@ -1,7 +1,7 @@
 $(function () {
   $(".carousel-brands").slick({
     centerMode: true,
-    centerPadding: "60px",
+    centerPadding: "150px",
     slidesToShow: 5,
     autoplay: true,
     autoplaySpeed: 1500,
@@ -12,7 +12,7 @@ $(function () {
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: "40px",
+          centerPadding: "90px",
           slidesToShow: 4,
         },
       },
@@ -21,7 +21,7 @@ $(function () {
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: "40px",
+          centerPadding: "85px",
           slidesToShow: 3,
         },
       },
@@ -31,7 +31,7 @@ $(function () {
           arrows: false,
           centerMode: true,
           centerPadding: "40px",
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
       {
@@ -39,7 +39,7 @@ $(function () {
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: "40px",
+          centerPadding: "55px",
           slidesToShow: 1,
         },
       },
