@@ -1,2 +1,0 @@
-﻿# Ottawas Language Institute
- 
