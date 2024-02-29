@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Educacion continua - RIU",
-    "currentPage": "ideal.html",
+    "currentPage": "riu.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -62,7 +62,7 @@
     "pwa-switcher": false
   },
   "pages": {
-    "ideal.html": {
+    "riu.html": {
       "settings": {
         "main": true,
         "title": "Educación continua idioma inglés - RIU",
